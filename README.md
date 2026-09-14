@@ -29,11 +29,11 @@
 
 ## 下载
 
-[下载豆角 Windows 启动自检测试版 0.1.0-alpha.2](https://github.com/dandingren/doujiao-desktop/releases/tag/v0.1.0-alpha.2)
+[下载豆角 Windows 启动诊断测试版 0.1.0-alpha.3](https://github.com/dandingren/doujiao-desktop/releases/tag/v0.1.0-alpha.3)
 
 这是预发布测试版，用于验证另一台 Windows 电脑上的安装、启动、桌面显示、对话、图标互动和卸载。下载 ZIP 后必须完整解压，再双击“安装豆角免费桌面版.exe”；安装程序和 `payload` 文件夹需要保持在同一目录。
 
-0.1.0-alpha.2 修复了启动请求长时间等待后只显示“操作超时”的问题。现在启动器会显示当前卡在安装检查、桌面宿主、桌面层、语音还是常驻服务，并把详细报告保存到 `%LOCALAPPDATA%\Doujiao\diagnostics\startup-latest.txt`。
+0.1.0-alpha.3 去掉了可能卡住的 Windows 旧进程系统查询，并将桌面宿主阶段、进程号、WebView2 状态和宿主错误直接显示在“运行检查”。真正阻止启动的错误会置顶；因主故障尚未执行的步骤显示为“未检查”，图标控制显示为可选能力，媒体审计显示为开发质量记录。详细报告保存到 `%LOCALAPPDATA%\Doujiao\diagnostics\startup-latest.txt`。
 
 安装包不包含开发机 API 密钥、账号配置、个人路径或桌面图标。联网对话需要在目标电脑的豆角设置页单独填写 API 配置。
 
@@ -43,7 +43,7 @@
 - 安装程序数字签名。
 - 图标互动整段与后续媒体的最终人工观感。
 
-ZIP SHA-256：`502CC5A79177AA185BF498F229994F75871706C90862D4F6DAB2342D1A6B07D3`
+ZIP SHA-256：`3A2E6C661895BD5416422918A7B57AE76B4B3A7F1AFCE130112B7FF76B1D9374`
 
 ## 源码状态
 
@@ -77,3 +77,4 @@ ZIP SHA-256：`502CC5A79177AA185BF498F229994F75871706C90862D4F6DAB2342D1A6B07D3`
 - 2026-09-13：完成首个独立 Windows 候选包的本机安装验证，发布完整桌面演示。
 - 2026-09-14：发布 `v0.1.0-alpha.1` 跨电脑安装测试版。
 - 2026-09-14：发布 `v0.1.0-alpha.2` 启动自检测试版。
+- 2026-09-14：准备 `v0.1.0-alpha.3` 启动诊断测试版，将主故障、未检查项、可选能力和开发信息分开显示。
