@@ -25,4 +25,5 @@
 - 大小：286,648,482 字节
 - 文件数：174
 - SHA-256：`B3DB11EF4163D7EC3C85031103520E6C8779B21C76E565504B34A52BC96F0064`
-- 状态：待发布预发布版本；安装程序未签名
+- 状态：已发布预发布版本；安装程序未签名
+- 发布地址：`https://github.com/dandingren/doujiao-desktop/releases/tag/v0.1.0-alpha.3`
